@@ -1,0 +1,54 @@
+{
+    "name": "supabse-provider",
+    "version": "0.0.4-6-alpha",
+    "description": "Sync Yjs over supabase",
+    "sideEffects": false,
+    "main": "src/supabse-provider.js",
+    "types": "dist/index.d.ts",
+    "files": [
+      "dist/**/*"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/AlexDunmoiw/supabse-provider.git"
+    },
+    "keywords": [
+      "Yjs"
+    ],
+    "author": "Alex Dunmow <alex@413x.tech>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/AlexDunmow/supabse-provider/issues"
+    },
+    "homepage": "https://github.com/AlexDunmow/supabse-provider",
+    "dependencies": {
+      "@supabase/realtime-js": "^2.6.0",
+      "@supabase/supabase-js": "^2.7.0",
+      "debug": "^4.3.2",
+      "events": "^3.3.0",
+      "y-protocols": "^1.0.5",
+      "supabse-provider": "^0.0.4-4-alpha",
+      "debounce": "^1.2.1",
+      "js-base64": "^3.7.2"
+    },
+    "devDependencies": {
+      "@types/debug": "^4.1.7",
+      "@types/events": "^3.0.0",
+      "@types/node": "^16.10.2",
+      "@types/websocket": "^1.0.5",
+      "prettier": "^2.8.3",
+      "tslint": "^6.1.3",
+      "tslint-config-prettier": "^1.18.0",
+      "typescript": "^4.9.5",
+      "yjs": "^13.5.0"
+    },
+    "peerDependencies": {
+      "yjs": "^13.5.6"
+    },
+    "scripts": {
+      "build": "tsc",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "format": "prettier --write \"src/**/*.ts\"",
+      "lint": "tslint -p tsconfig.json"
+    }
+  }
